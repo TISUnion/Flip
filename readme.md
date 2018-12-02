@@ -2,4 +2,4 @@ Useless and Meaningless
 
 !!flip (\<upperlimit\>) (\<lowerlimit\>)  
 
-returns a integer between two limits  
+returns a random integer between two limits  
