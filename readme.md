@@ -1,5 +1,5 @@
 Useless and Meaningless  
 
-!!flip (/<upperlimit/>) (/<lowerlimit/>)  
+!!flip (\<upperlimit\>) (\<lowerlimit\>)  
 
 returns a integer between two limits  
