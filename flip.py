@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 #copied and modified from TPS repo.
 
+import random
+
 def onServerInfo(server, info):
   if info.isPlayer == 1:
     if info.content.startswith('!!flip'):
