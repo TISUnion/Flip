@@ -2,6 +2,7 @@
 #copied and modified from TPS repo.
 
 import random
+import traceback
 
 def onServerInfo(server, info):
   if info.isPlayer == 1:
@@ -18,5 +19,7 @@ def onServerInfo(server, info):
           server.tell(info.player, str(random.randint(int(float(args[2])),int(float(args[1])))))
         else:
           server.tell(info.player, '输入无效')
-      except BaseException,e:
-        server.say(e.message)
+      except Exception as e:
+        lines = traceback.format_exc().splitlines()
+        for l in lines:
+          server.say(l)
