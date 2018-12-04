@@ -19,7 +19,7 @@ def onServerInfo(server, info):
           server.tell(info.player, str(random.randint(int(float(args[2])),int(float(args[1])))))
         else:
           server.tell(info.player, '输入无效')
-      except Exception as e:
+      except:
         lines = traceback.format_exc().splitlines()
         for l in lines:
           server.say(l)
